@@ -1,0 +1,160 @@
+/* css custom properties DECLARATION (ALSO KNOW AS CSS VARIBLE) USIG THE ROAST  */
+/* *
+*INSIDE the cturly brass, we're defining css custom properties. (variables) that start with '--'
+these varibles can be reversed throughout the stylesheet.
+*/
+/* 
+*(Hue,saturation.lightness)
+
+Hue-->(0-360) : The angles on the color wheel (0-360)
+0 or 360 =red
+120=green
+240=blue
+-----------------------------------------------------------
+Saturation-->(0%-100%) : intensity of the color 
+0%= Gray(no color)
+100% =full vibrant color
+-----------------------------------------------------------
+Lightness-->(0%-100%) : How much light is added.
+0%= black
+50%=Normal color
+100%=white
+
+ */
+
+:root{
+    --red:hsl(7,99%,70%);
+    --yellow:hsl(51,100%,49%);
+    --dark:hsl(212,27%,19%);
+    --gray:hsl(213,9%,39%);
+    --grayish:hsl(232,10%,55%);
+    --dark-cyan:hsl(167,40%,24%);
+    --dark-blue:hsl(198,62%,26%);
+    --footer-hg:hsl(168,34%,41%);
+    --cyan-moderate:hsl(167,44%,70%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:'Barlow', sans-serif ;
+    font-size: 18px;
+    color: var(--grayish);
+    line-height: 1.7;
+}
+
+h1,
+h2,
+h3,
+h4{
+    font-family: 'Fraunces', serif;
+    color: var(--dark);
+    font-weight: 900;
+}
+
+h1{
+    font-size: 3.5rem;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+}
+
+h2{
+    font-size: 2.5rem;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+}
+
+h3{
+    font-size: 1.75rem;
+    margin-left: 1.5rem;
+}
+p{
+    line-height: 1.7;
+}
+
+/* hero section */
+
+.hero{
+    background: url("assets/images/image-header.jpg") center/cover no-repeat;
+    min-height: 120vh;
+    color: white;
+    
+    
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 3rem;
+
+}
+.logo{
+    width: 170px;
+    height: auto;
+}
+
+.nav-links{
+    display: flex;
+    gap:3rem;
+    list-style: none;
+    align-items: center;
+}
+.nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    transition: all 0.3 ease;
+}
+.nav a:hover{
+    color: rgba(255, 255, 255, 0.7);
+    
+}
+
+ .nav-links .btn{
+    background: white; 
+    color:var(--dark);
+    padding: 0.9rem 1.8rem;
+    border-radius: 20px;
+    font-family: 'fraunces', serif;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    transition: all 0.3 ease;
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+}
+
+.btn:hover{
+   background: rgba(255, 255, 255, 0.3);
+    color: white; 
+}
+    
+
+    
+.Hamburger{
+    display:none;
+    background: none;
+    border:none;
+    cursor: pointer;
+}
+
+.mobile-menu{
+    display: none;
+    position: absolute;
+    top: 6.5rem;
+    left: 1.5;
+    background:white;
+    padding: 2.5rem;
+    text-align: center;
+    z-index: 100;
+}
+
+
+
+
