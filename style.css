@@ -363,3 +363,73 @@ text h2{
     background-image: url(assets/images/image-photography.jpg);
     color:var(--dark-blue);
 }
+/* wednesday */
+.photography h3{
+    color: var(--dark-blue);
+}
+/* testimonials */
+.Testimonials{
+    padding: 10rem 2rem 10rem;
+    text-align: center;
+
+}
+
+.Testimonials h2{
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    color:var(--grayish);
+    font-size: 1.25em;
+    font-weight: 900;
+    margin-bottom: 5rem;
+}
+
+.Testimonials-grid{
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 5rem;
+}
+.Testimonials-grid article {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Testimonials-grid article img{
+    width: 72px;
+    height: 72px;
+    border-radius:50% ;
+    margin-bottom: 3.5rem;
+}
+
+.Testimonials-grid article p{
+    margin-bottom: 4rem;
+    line-height: 1.8;
+    color: var(--dark);
+    font-size: 1.125rem;
+
+
+}
+.Testimonials-grid article h4{
+    font-size: 1.125rem;
+    margin-bottom: 0.75rem;
+
+}
+.Testimonials-grid article span{
+    font-size: 0.875rem;
+    color:var(--grayish)
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery img{
+    width: 25%;/* 4 columns on desktop*/
+    height: 300px; /* Fixed height for uniformity*/
+    object-fit: cover;/* FILL without distortion keeping the image sharp*/
+
+    display: block;
+}
