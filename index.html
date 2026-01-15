@@ -4,137 +4,155 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap" rel="stylesheet">
-
-
-
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="hero" style="background-color: greenyellow;">
-        <nav class="nav container">
-<img src="assets/icons/logo.svg" alt="Sunnyside logo" class="logo" width="124" height="24">
-<ul class="nav-links">
-<il><a href="#About">About</a></il>
-<il><a href="#Services">Services</a></il>
-<il><a href="#Projects">Projects</a></il>
-<il><a href="#Contacts" class="btn">Contact</a></il>
-</ul>
-<button class="Hamburger">
-    <img src="assets/icons/icon-hamburger.svg" alt="" width="24" height="18">
-</button>
-        </nav>
-        <!-- moblie Menu -->
-         <div class="moblie-menu" id="moblie-menu">
-            <ul>
-                <il><a href="#About">About</a></il>
-<il><a href="#Services">Services</a></il>
-<il><a href="#Projects">Projects</a></il>
-<il><a href="#Contacts" class="btn-moblie">Contact</a></il>
-            </ul>
-         </div>
+            <header class="hero" style="background-color: greenyellow;">
+                <nav class="nav container">
+                    <img src="assets/icons/logo.svg" alt="Sunneyside Logo" class="logo" width="124" height="24">
+                        <ul class="nav-links">
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#contact" class="btn">Contact</a></li>
+                        </ul>
+                        <button class="hamburger">
+                            <img src="assets/icons/icon-hamburger.svg" alt="" width="24" height="18">
+                        </button>
+                </nav>
+
+                <!--Mobile Menu-->
+                <div class="mobile-menu" id="mobile-menu">
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact" class="btn-mobile">CONTACT</a></li>
+
+                    </ul>
+                </div>
 
 
-         <!-- Hero content -->
+                <div class="hero-content">
+                    <h1>We are creatives</h1>
+                    <img src="assets/icons/icon-arrow-down.svg" alt="" class="arrow" width="36" height="114">
+                    
+                </div>
+            </header>
 
-        <div class="hero-content">
-            <h1>We are creatives</h1>
-            <img src="assets/icons/icon-arrow-down.svg" alt="" class="arrow" width="36" height="114">
-        </div>
-    </header>
-    <main>
-        <section class="split">
-            <article class="text">
-                <h2>Transform your brand</h2>
-                <p>we are a full-service creative agency spcializing in helping brands grow fast. </p>
-                <a href="#" class="learn yellow">learn more</a>
-            </article>
-            <div class="image-container">
-                <picture>
-                    <source media="(max-width: 768px)" srcset="assets/images/mobile/images-trnasform.jpg">
-                    <img src="assets/images/image-transform.jpg" alt="transform your brand" loading="lazy" decoding="async" width="720" height="600">
-                </picture>
-            </div>
+            <main>
+                <section class="split">
+                    <article class="text">
+                        <h2>Transform your brand</h2>
+                        <p> We are a full-service creative agency specializing in helping brands grow fast.
+                            Engage your clients through compelling visuals that do most of the marketing for you</p>
+                        <a href="#" class="learn yellow">Learn More</a>                
+                    </article>
+                    <div class="image-container">
+                        <picture>
+                            <source media="(max-width:768px)" srcset="assets/images/mobile/image-transform.jpg">
+                            <img src="assets/images/image-transform.jpg" alt="Transform your brand" loading="lazy"
+                            decoding="async" width="720" height="600">
+                        </picture>
+                    </div>
+                </section>
 
-        </section>
+                <!-- Stand out -->
+                <section class="split reverse">
+                    <article class="text">
+                        <h2>Stand out to the right audience</h2>
+                        <p>Using a collaborative formular of desingers, researchers, and photographers
+                            videographers, and copywriters, we'll build and extend your brand in digitalplaces.
+                        </p>
+                        <a href="#" class="learn yellow">Learn More</a>
+                    </article>
+                    <div class="image-container">
+                        <source media="(min-width:768px)" srcset="assets/images/mobile/image-stand-out.jpg">
+                            <img src="assets/images/image-stand-out.jpg" alt="Stand out to the right audience" loading="lazy"
+                            decoding="async" width="720" height="600">
+                        </picture>
+                    </div>
+                </section>
 
-        <!-- Stand Out -->
-         <section class="split reverse">
-            <article class="text">
-                <h2>Stand out to the right audience</h2>
-                <p>Using a collaborative formula of designers, reseachers, and photograhers.</p>
-                <a href="#" class="learn red">learn more</a>
-            </article>
-            <div class="image-container">
-                <picture>
-                    <source media="(max-width: 768px)" srcset="assets/images/mobile/images-trnasform.jpg">
-                    <img src="assets/images/image-stand-out.jpg" alt="transform your brand" loading="lazy" decoding="async" width="720" height="600">
-                </picture>
-
-            </div>
-         </section>
-         <!-- services -->
-         <section class="services">
-            <article class ="service graphic">
-                <h3>Graphic designers</h3>
-                <p>Great design makes you memorable. we deliver that underscores your brand message and captures the potential clients attention. </p>
-            </article>
-             <article class ="service photography">
-                <h3>Graphic designers</h3>
-                <p>Increase credibility with stunning photography</p>
-            </article>
-         </section>
-
-         <!-- Testimonials -->
-          <section class="Testimonials">
-            <h2>Clients Testimonials</h2>
-            <div class="Testimonials-grid">
-                <article>
-                    <img src="assets/images/image-emily.jpg" alt="Emily R." loading="lazy" decoding="async" width="72" height="72">
-                    <p>We put our trust in sunnyside and they delivered.</p>
-                    <h4>Emily R.</h4>
-                    <span>Marketing Director</span>
-                </article>
-
-                <article>
-                     <img src="assets/images/image-thomas.jpg" alt="Thomas S." loading="lazy" decoding="async" width="72" height="72">
-                     <p>Enthusiam coupled with keen interest.</p>
-                     <h4>Thomas S.</h4>
-                     <span>Cheif Operating Officer</span>
-                </article>
-                <article>
-                     <img src="assets/images/image-jennie.jpg" alt="Emily R." loading="lazy" decoding="async" width="72" height="72">
-                     <p>Incredile and result!.</p>
-                     <h4>Jennie F.</h4>
-                     <span>Business Owner</span>
-                </article>
-            </div>
-          </section>
-          <!-- Gallery -->
-          <section class="gallery">
-            <img src="assets/images/image-gallery-milkbottles.jpg" alt="Milk bottles" loading="lazy" decoding="async" width="360" height="447">
-            <img src="assets/images/image-gallery-orange.jpg" alt="orange" loading="lazy" decoding="async" width="360" height="447">
-            <img src="assets/images/image-gallery-cone.jpg" alt="ice cream cone" loading="lazy" decoding="async" width="360" height="447">
-            <img src="assets/images/image-gallery-sugar-cubes.jpg" alt="sugar cubed" loading="lazy" decoding="async" width="360" height="447">
+                <section class="services">
+                    <article class="service graphic">
+                        <h3>Graphic Design</h3>
+                        <p>Grate design makes you memorable. We deliver artwork that underscores your brand message and captures
+                            potential clients' attention.
+                        </p>
+                    </article>
+                    <article class="service photography">
+                        <h3>Photography</h3>
+                        <p>Increase your credibility by getting the most stunning, high-quality that improve your business image.</p>
+                    </article>
+                </section>
+                <!-- Testimonials  -->
 
 
+                <!-- We dont include the class in the section -->
+                <section class="testimonials"> 
+                    <h2>CLIENT TESTIMONIALS</h2>
+                    <div class="testimonials-grid">
+                        <article>
+                            <img src="assets/images/image-emily.jpg" alt="Emily R."  loading="lazy" 
+                            decoding="async" width="72" height="72">
+                            <p>We put trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+                            <h4>Emily R.</h4>
+                            <span>Marketing Director</span>
+                        </article>
+                        
 
-          </section>
-    </main>
+                        <article>
+                            <img src="assets/images/image-thomas.jpg" alt="Thomas S." width="72" height="72" loading="lazy" 
+                            decoding="async">
+                            <p>Sunnyside enthusiasm coupled with their keen interest in our brand's success made it a satisfying and enyoyable experience.</p>
+                            <h4>Thomas S.</h4>
+                            <span>Chief Operating Officer</span>
+                        </article>
+                        
 
-    <footer class="footer">
-        <img src="assets/icons/logo.svg" alt="sunnyside logo" width="124" height="24">
-        <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Projects</a></li>
-        </ul>
-        <div class="socials">
-            <img src="assets/icons/icon-facebook.svg" alt="facebook" width="20" height="20" loading="lazy" decoding="async">
-            <img src="assets/icons/icon-instagram.svg" alt="instagram" width="20" height="20" loading="lazy" decoding="async">
-            <img src="assets/icons/icon-twitter.svg" alt="twitter" width="20" height="20" loading="lazy" decoding="async">
-            <img src="assets/icons/icon-pinterest.svg" alt="pinterest" width="20" height="20" loading="lazy" decoding="async">
-        </div>
-    </footer>
+                        <article>
+                            <img src="assets/images/image-jennie.jpg" alt="Jennie F." width="72" height="72" loading="lazy" 
+                            decoding="async">
+                            <p>Incredible end results! Our sales increased over 400% when we worked with Sunneyside. Highly recommended!</p>
+                            <h4>Jennie F.</h4>
+                            <span>Business Owner</span>
+                        </article>
+                        
+                    </div>
+                </section>
+
+             <!-- Gallery -->
+                <section class="gallery" >
+                    <img src="assets/images/image-gallery-milkbottles.jpg" alt="Milk bottles" loading="lazy" decoding="async" width="360" height="447">
+                    <img src="assets/images/image-gallery-orange.jpg" alt="Orange" loading="lazy" decoding="async" width="360" height="447">
+                    <img src="assets/images/image-gallery-cone.jpg" alt="Ice cream cone" loading="lazy" decoding="async" width="360" height="447">
+                    <img src="assets/images/image-gallery-sugar-cubes.jpg" alt="Sugar cubes" loading="lazy" decoding="async" width="360" height="447">
+                </section>
+            </main>
+
+            <footer class="footer">
+                <img src="assets/icons/logo.svg" alt="Sunneyside logo" width="124" height="24">
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Projects</a></li>
+                </ul> 
+                <div class="socials">
+                    <img src="assets/icons/icon-facebook.svg" alt="Facebook" width="20" height="20" loading="lazy" decoding="async">
+                    <img src="assets/icons/icon-instagram.svg" alt="Instagram" width="20" height="20" loading="lazy" decoding="async">
+                    <img src="assets/icons/icon-twitter.svg" alt="Twitter" width="20" height="20" loading="lazy" decoding="async">
+                    <img src="assets/icons/icon-pinterest.svg" alt="Pinterest" width="20" height="20" loading="lazy" decoding="async">
+                </div>
+            </footer>
+
+
+
+
+
+
+
+
 </body>
 </html>

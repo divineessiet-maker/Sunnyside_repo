@@ -1,435 +1,642 @@
-/* css custom properties DECLARATION (ALSO KNOW AS CSS VARIBLE) USIG THE ROAST  */
-/* *
-*INSIDE the cturly brass, we're defining css custom properties. (variables) that start with '--'
-these varibles can be reversed throughout the stylesheet.
+/* CSS custom properties declaration (also known as CSS  variables) using the ':root' 
+   
+    inside the curly braes, we're defining CSS custom properties (variables) that start with'--'
+
+    These variables can be reused throughout the stylesheets  
+
 */
-/* 
-*(Hue,saturation.lightness)
 
-Hue-->(0-360) : The angles on the color wheel (0-360)
-0 or 360 =red
-120=green
-240=blue
------------------------------------------------------------
-Saturation-->(0%-100%) : intensity of the color 
-0%= Gray(no color)
-100% =full vibrant color
------------------------------------------------------------
-Lightness-->(0%-100%) : How much light is added.
-0%= black
-50%=Normal color
-100%=white
+/* hsl meaning (Hue, Saturation and Lightness  
+  Hue -> (0-360 degrees): The angle on the color wheel
+    0 → Red
+    120 → Green
+    240 → Blue
+  --------------------------------------
+   
+  Saturation -> (0%-100%): How "intense" the color is ! .
+    0% = Gray (no color)
+    100% = Full vibrant color
 
- */
+  --------------------------------------
+  lightness -> (0%-100%): How much light is added.
+    0% = Black
+    50% = Normal color
+    100% = White
+
+*/
+
+
 
 :root{
-    --red:hsl(7,99%,70%);
-    --yellow:hsl(51,100%,49%);
-    --dark:hsl(212,27%,19%);
-    --gray:hsl(213,9%,39%);
-    --grayish:hsl(232,10%,55%);
-    --dark-cyan:hsl(167,40%,24%);
-    --dark-blue:hsl(198,62%,26%);
-    --footer-hg:hsl(168,34%,41%);
-    --cyan-moderate:hsl(167,44%,70%);
+  --red:hsl(7, 99%, 70%);
+  --yellow:hsl(51, 100%, 49%);
+  --dark:hsl(212, 27%, 19%);
+  --gary:hsl(213, 9%, 39%);
+  --grayish:hsl(232, 10%, 55%);
+  --dark-cyan:hsl(167, 40%, 24%);
+  --dark-blue:hsl(198, 62%, 26%);
+  --footer-bg:hsl(168, 34%, 41%);
+  --cyan-moderate:hsl(167, 44%, 70%);
+
 }
 
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body{
-    font-family:'Barlow', sans-serif ;
-    font-size: 18px;
-    color: var(--grayish);
-    line-height: 1.7;
+  font-family: 'Barlow', sans-serif;
+  font-size: 18px;
+  color: var(--grayish);
+  line-height: 1.7;
 }
 
-h1,
-h2,
-h3,
+
 h4{
-    font-family: 'Fraunces', serif;
-    color: var(--dark);
-    font-weight: 900;
+  font-family: 'Fraunces', serif;
+  color: var(--dark);
+  font-weight: 900;
 }
 
 h1{
-    font-size: 3.5rem;
-    letter-spacing: 0.5rem;
-    text-transform: uppercase;
+  font-family: 'Fraunces', serif;
+  color: var(--dark);
+  font-family: 3.5rem;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
 }
 
 h2{
-    font-size: 2.5rem;
-    line-height: 1.2;
-    margin-bottom: 2rem;
+  font-size: 2.5rem;
+  line-height: 1.2;
+  margin-bottom: 2rem;
 }
 
 h3{
-    font-size: 1.75rem;
-    margin-left: 1.5rem;
+  font-size: 1.75rem;
+  margin-left: 1.5rem;
 }
+
 p{
-    line-height: 1.7;
+  line-height: 1.7;
 }
 
-/* hero section */
-
+/* Hero Section */
 .hero{
-    background: url("assets/images/image-header.jpg") center/cover no-repeat;
-    min-height: 120vh;
-    color: white;
-    
-    
+  background: url(assets/images/image-header.jpg) center/cover no-repeat ;
+  min-height: 100vh;
+  color: white;
 }
+
 
 .nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2rem 3rem;
-
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 3rem;
 }
 .logo{
-    width: 170px;
-    height: auto;
+  width: 170px;
+  height: auto;
 }
 
 .nav-links{
-    display: flex;
-    gap:3rem;
-    list-style: none;
-    align-items: center;
-}
-.nav a{
-    text-decoration: none;
-    color: white;
-    font-size: 1.5rem;
-    transition: all 0.3 ease;
-}
-.nav a:hover{
-    color: rgba(255, 255, 255, 0.7);
-    
+  display: flex;
+  gap: 3rem;
+  list-style: none;
+  align-items: center;
 }
 
- .nav-links .btn{
-    background: white; 
-    color:var(--dark);
-    padding: 0.9rem 1.8rem;
-    border-radius: 20px;
-    font-family: 'fraunces', serif;
-    text-transform: uppercase;
-    font-size: 0.85rem;
-    transition: all 0.3 ease;
-    display:inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: auto;
+.nav a{
+  text-decoration: none;
+  color: white;
+  font-size: 1.125rem;
+  transition: all 0.3 ease;
 }
+
+.nav a:hover{
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.nav-links .btn{
+  background: white;
+  color: var(--dark);
+  padding: 0.9rem 1.8rem;
+  border-radius: 28px;
+  font-family: 'Fraunces', serif;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  transition: all 0.3s ease;
+  display: inline-flex; /*Prevent full-width stretching*/
+  justify-content: center;
+  align-items: center;
+  width: auto;
+}
+
 
 .btn:hover{
-   background: rgba(255, 255, 255, 0.3);
-    color: white; 
-}
-    
-
-    
-.Hamburger{
-    display:none;
-    background: none;
-    border:none;
-    cursor: pointer;
+  background: rgba(255, 255, 255, 0.3);
+  color: white;
 }
 
+.hamburger{
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+
+/* Mobile Menu - hidden by default */
 .mobile-menu{
-    display: none;
-    position: absolute;
-    top: 6.5rem;
-    left: 1.5;
-    background:white;
-    padding: 2.5rem;
-    text-align: center;
-    z-index: 100;
+  display: none;
+  position: absolute;
+  top: 6.5rem;
+  left: 1.5rem;
+  background: white;
+  padding: 2.5rem;
+  text-align: center;
+  z-index: 100;
 }
+
+
+/*Triangle decoration at top*/
 .mobile-menu::before{
-    content: '';
-    position: absolute;
-    top: -24px; ;
-    right: 15px;
-    width: 30px;
-    height:0;
-    border-left:24 solid transparent ;
-    border-bottom: 24px solid white;
+  content: '';
+  position: absolute;
+  top: 24px;
+  right: 15px;
+  width: 30px;
+  height: 0; 
+  border-left: 24px solid transparent;
+  border-bottom: 24px solid white;
 }
+
 .mobile-menu ul{
-        list-style: none;
-    }
-    .mobile-menu ul li{
-        margin-bottom: 2rem;
-    }
-    .mobile-menu ul li :last-child{
-        margin-bottom: 0;
-    }
+  list-style: none;
+}
 
-    .mobile-menu a{
-        text-decoration: none;
-        color: var(--grayish);
-        font-size: 1.25;
-    }
-    
-    .btn-moblie{
-        background: var(--yellow);
-        color: var(--dark);
-        padding: 1rem 2rem;
-        border-radius: 30px;
-        font-family: 'fraunces', serif ;
-        text-transform: uppercase;
-        font-size: 0.9rem;
-        display: inline-block;
-    }
+.mobile-menu ul li{
+  margin-bottom: 2rem;
+}
 
-    /* javascript Triggered state */
-    /* Toggle visibility */
-    .mobile-menu.active{
-        display: block;
-    }
+.mobile-menu ul li:last-child{
+  margin-bottom: 0;
+}
 
-    /* Hero sewction content postioning  */
-    .hero-content{
-text-align: center;
-display: flex;
-flex-direction: column;
-align-items: center;
-padding-top: 6rem;
-justify-content: flex-start;
-    }
+.mobile-menu a{
+  text-decoration: none;
+  color: var(--grayish);
+  font-size: 1.25rem;
+}
 
-/* Hreo H1 must be white */
+.btn-mobile{
+  background: var(--yellow);
+  color: var(--dark);
+  padding: 1rem 2rem;
+  border-radius:30px;
+  font-family: 'Fraunces', serif;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  display: inline-block;
+}
+
+
+/*Javascript-Triggered state*/
+/*Toggle visibility*/
+
+.mobile-menu.active{
+  display: block;
+}
+
+
+/*Hero Section content Positioning*/
+
+.hero-content{
+  text-align: center;
+  position: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5rem;
+  justify-content: flex-end;
+}
+
+/*Hero H1 must be white */
 .hero h1{
-color: #fff;
+  color: #fff;
+
 }
+
+
+
 .arrow{
-    margin-top: 4rem;
-    animation: bounce 1.5s infinite;
-
+  margin-top: 4rem;
+  animation: bounce 1.5s infinite;
 }
 
-@keyframes bounce{
-    0%,
-    100%{
-        transform:translateY(0)
-    }
-    50%{
-        transform:translateY(30px)
-    }
+
+/* @Keyframes animation-name 
+    0% {Start} 
+    0% {Middle}
+    100% {End}
+
+*/ 
+
+
+
+@keyframes bounce {
+  0%,
+  100%{transform: translateY(0)}
+  50%{transform: translateY(20%)}
 }
 
-/* split sections-FIXED LAYOUT */
+
+/* Split Sections - Fixed Layout */
+
 .split{
-    display: flex;
-    /* *makes all flex children equal height */
-    /* *Stretches them to the tallest silbling */
-    align-items: stretch;
-    min-height: auto;    /*let content drive height*/
+  display: flex;
+  /* Makes all flex children equal height */
+  /* Stretches them to match tallest sibling */
+  align-items: stretch;
+  min-height: auto; /*let content drive height*/
 }
-/* Text-container-50% width with centered content */
+
+/* Text container */
 .text{
-    flex:1 1 50%; /*force exact 50% */
-    padding: 8rem 6rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  flex: 1 1 50%;
+  padding: 8rem 6rem; /*Balanced padding*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-/* image-container */
 
 
-/* it wil never shrink below the contents original height */
+
+/* Never shrink below your content's natural height */
+/* Image container */
 .image-container{
-    flex:1 1 50%;
-    position: relative;
-    overflow: hidden;
-    min-height: 0;/*to allow container to shrink*/
+  flex: 1 1 50%;  /*Force exact 50% width on desktop*/
+  position: relative;
+  overflow: hidden;
+  min-height: 0;  /* Allow container to shrink*/
 }
 
-/* image fills container edgr-to-edge */
+/* Image fills container edge-to-edge */
 .image-container img{
-    width:100%;
-    height: 100%;
-    object-fit: cover;
-display: block; /*Removes inline layout, Eliminates baseline alignment issues,no more mysterious gaps!*/
-    margin: 0%;
-    padding: 0%;
-    
-    
+  width:100%;
+  height: 100%;
+  object-fit: cover;
+  display: block; /*Removes inline layout, eliminates baseline alignment issues, no more mysterious gaps!*/
+  margin: 0;
+  padding: 0;
 }
-text h2{
-    margin-bottom: 2rem;
 
+
+/* Text styling */
+.text h2{
+  margin-bottom: 2rem;
 }
 
 .text p{
-    margin-bottom: 2.5rem;
-    color: var(--grayish);
+  margin-bottom: 2.5rem;
+  color: var(--grayish);
 }
+
+
 /* learn more link styles */
 .learn{
-    font-family: 'fraunces' serif;
-    text-transform: uppercase;
-    color: var(--dark);
-    font-weight: 900;
-    font-size: 1rem;
-    letter-spacing:  0.1em; 
-/* it creates positioning context for chlid pseudo-elements */
-    position: relative; /*allows after to be positioned relative to this element */
-    width:fit-content;/* No extra whitespace , perfect fit too text */ 
-    display: inline-flex;/*Allow better vertical alignment control*/
+  font-family: 'Fraunces', serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--dark);
+  font-weight: 900;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  /* It create positioning context for child pseudo-elements */
+  position: relative; /*Allows:: After to be positioned relative to this element*/
+  width: fit-content; /*No extra whitespace, perfect fit too text*/
+  display: inline-flex; /*Allow better vertical alignment control*/
 }
 
-.learn::after{
-    content:'';
-      position: absolute;
-      bottom: -2px;
-      left:-8px;
-      right:-8px ;
-      height:10px;
-      border-radius: 10px;
-      opacity:0.3;/* visual effects ,less distracting than solid underline */
-      /* places underline behined the text */
-      /* *prevents interface from readability    */
-      /* !without this underline would cover text */
-      z-index:-1;
-      transition: opacity 0.3s ease ;
+.learn:after{
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: -8px;
+  right: -8px;
+  height: 10px;
+  border-radius: 10px;
+  opacity: 0.3; /* Visual Effects, less distracting than solid underline*/
 
+  /* Places underline behind the text */
+  /* Prevents interface with readability */
+  /* Without this: underline would cover text */
+
+  z-index: -1;
+  transition: opacity 0.3s ease;
 }
+
 .learn:hover::after{
-    opacity:1;
-
+  opacity: 1;
 }
 
 .learn.yellow::after{
-    background: var(--yellow);
-
+  background: var(--yellow);
 }
-.learn.red::after{
-    background: var(--red);
 
+.learn.red::after{
+  background: var(--red);
 }
 
 .reverse .text{
-    padding: 8rem 6rem;
-}
-.reverse{
-    flex-direction: row-reverse;
-}
-.services{
-    display: flex;
-}
-.service{
-    flex: 1;  /*ALL children grow/shrink equally, Each takes equal share of available space  */
-    min-height: 600px;
-    padding: 3.5rem 2rem 3.5rem 2rem;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    /* scales images to fil entire content */
-    background-size: cover;
-    /* centers the image (optional focal points) */
-    background-position: center;
+  padding: 8rem 6rem;
 }
 
+.reverse{
+  flex-direction: row-reverse;
+}
+
+/* Services Section */
+
+.services{
+  display: flex;
+}
+
+.service{
+  flex: 1; /*All children grow/shrink equally, each takes equal share of available space*/
+  min-height: 600px;
+  padding: 3.5rem 2rem 3.5rem 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  /* Scales image to fill entire container */
+  background-size: cover;
+  /* Centers the image (optimal focal point) */
+  background-position: center;
+}
+
+
 .service h3{
-    margin-bottom: 1.75rem;
+  margin-bottom: 1.75rem;
 }
 
 .service p{
-    max-width: 340px;
-    margin: 0 auto;
-    line-height: 1.7;
-    font-size: 1rem;
+  max-width: 340px;
+  margin: 0 auto;
+  line-height: 1.7;
+  font-size: 1rem;
 }
+
 .graphic{
-    background-image: url(assets/images/image-graphic-design.jpg);
-    color: var(--dark-cyan);
+  background-image: url(assets/images/image-graphic-design.jpg);
+  color: var(--dark-cyan);
 }
 
 .graphic h3{
-    color: var(--dark-cyan);
+  color: var(--dark-cyan);
 }
+
 .photography{
-    background-image: url(assets/images/image-photography.jpg);
-    color:var(--dark-blue);
-}
-/* wednesday */
-.photography h3{
-    color: var(--dark-blue);
-}
-/* testimonials */
-.Testimonials{
-    padding: 10rem 2rem 10rem;
-    text-align: center;
-
+  background-image: url(assets/images/image-photography.jpg);
+  color: var(--dark-blue);
 }
 
-.Testimonials h2{
-    text-transform: uppercase;
-    letter-spacing: 0.3rem;
-    color:var(--grayish);
-    font-size: 1.25em;
-    font-weight: 900;
-    margin-bottom: 5rem;
+
+.testimonials{
+  padding: 10rem 2rem 10rem;
+  text-align: center;
 }
 
-.Testimonials-grid{
-    display: flex;
-    max-width: 1200px;
-    margin: 0 auto;
-    gap: 5rem;
-}
-.Testimonials-grid article {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
+.testimonials h2{
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  color: var(--grayish);
+  font-size: 1.25rem;
+  font-weight: 900;
+  margin-bottom: 5rem;
 }
 
-.Testimonials-grid article img{
-    width: 72px;
-    height: 72px;
-    border-radius:50% ;
-    margin-bottom: 3.5rem;
-}
-
-.Testimonials-grid article p{
-    margin-bottom: 4rem;
-    line-height: 1.8;
-    color: var(--dark);
-    font-size: 1.125rem;
 
 
+.testimonials-grid{
+  display: flex;
+  gap: 5rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
-.Testimonials-grid article h4{
-    font-size: 1.125rem;
-    margin-bottom: 0.75rem;
 
+
+.testimonials-grid article{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.Testimonials-grid article span{
-    font-size: 0.875rem;
-    color:var(--grayish)
+
+
+.testimonials-grid p{
+  margin-bottom: 4rem;
+  line-height: 1.8;
+  color: var(--dark);
+  font-size: 1.125rem;
 }
+
+.testimonials-grid h4{
+  font-size: 1.125rem;
+  margin-bottom: 0.75rem;
+}
+
+
+.testimonials-grid article img{
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  margin-bottom: 3.5rem;
+}
+
+
+.testimonials-grid h4{
+  font-size: 1.125rem;
+  margin-bottom: 0.75rem;
+}
+
+.testimonials-grid article span{
+  font-size: 0.875rem;
+  color: var(--grayish);
+}
+
 
 .gallery{
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .gallery img{
-    width: 25%;/* 4 columns on desktop*/
-    height: 300px; /* Fixed height for uniformity*/
-    object-fit: cover;/* FILL without distortion keeping the image sharp*/
+  width: 25%; /*4 columns on desktop*/
+  height: 300px; /*fixed height for uniformity*/
+  object-fit: cover; /*fill without distortion keeping the image sharp*/
+  display: block;
+}
+ 
 
+
+
+
+
+
+.footer {
+  background: var(--footer-bg);
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+/* This is substring attribute selector. It target any image inside the footer whose alt text
+contains the word "logo" (e.g, alt="Company logo" or alt="Brand Logo white"). It is a robust way 
+to target the logo without needing a specific class name*/
+
+.footer img[alt*="logo"]{
+  width: 170px;
+  height: auto;
+  margin-bottom: 2.5rem;
+  /* If you change the order of the filter, the final color will be completely different or simply broken */
+  filter: brightness(0) saturate(100%) invert(37%) sepia(18%) saturate(100%) hue-rotate(118deg) brightness(93%) contrast(88%);
+}
+
+
+.footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 3.5rem;
+  margin-bottom: 5rem;
+}
+
+
+.footer ul a{
+  text-decoration: none;
+  color: var(--dark-cyan);
+  font-size: 1.125rem;
+  transition: color 0.3s ease;
+}
+
+footer ul a:hover{
+  color: white;
+}
+
+.socials{
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+
+.socials img{
+  cursor: pointer;
+  transition: filter 03s ease;
+}
+
+.social img:hover{
+  filter: brightness(0) saturate(100%) invert(100%);
+}
+
+/* Mobile Styles */
+@media (max-width:768px){
+  h1{
+    font-size: 2.5rem;
+    letter-spacing: 0.4rem;
+  }
+
+  h2{
+    font-size: 2rem;
+  }
+
+  .nav{
+    padding: 2rem 1.5rem;
+  }
+
+  .logo{
+    width: 124px;
+  }
+
+  .nav-links{
+    display: none;
+  }
+
+  .hamburger{
     display: block;
+  }
+
+  .hero{
+    background-image: url(assets/images/image-header.jpg);
+  }
+
+  .hero-content{
+    padding-top: 4rem;
+  }
+
+  .arrow{
+    margin-top: 2.5rem;
+  }
+
+/* Mobile Stake vertically */
+.split,
+.reverse{
+  flex-direction: column;
+}
+
+/* Image container takes full width fixed height */
+.image-container{
+  width: 100%;
+  height: 300px; /*Consistent height for mobile image*/
+  flex: none;
+}
+
+/* Text takes full width on mobile */
+.text{
+  width: 100%;
+  flex: none;
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+
+.services{
+  flex-direction: column;
+}
+
+.service{
+  min-height: 600px;
+}
+
+.testimonials{
+  padding: 4rem 1.5rem;
+}
+
+.testimonials h2{
+  margin-bottom: 4rem;
+  font-size: 1rem;
+}
+
+.testimonials-grid{
+  flex-direction: column;
+  gap: 4rem;
+}
+
+/* Mobile gallery: 2x2 grid */
+.gallery img{
+  width: 50%;
+  height: 250%;
+}
+
+.footer ul{
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+
+
+
 }
