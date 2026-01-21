@@ -2,10 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    
+    <!-- SEO -->
+     
+    <title>Sunneyside  / Creative agency </title>
+    <meta name="description"
+    content="Sunneyside is a full-service creative agency helping brands grow impact design and photography">
+    <meta name="Keyboard" content=" creative agency,brand, Graphic design photography">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<!-- Favicon -->
+ <link rel="icon" href="assets/favicon/favicon-32x32.png">
+ <!-- Preload Hero image for LCP -->
+  <link rel="preload" as="image" href="assets/images/image-header.jpg" media="(min-width:769px)">
+  <link rel="preload" as="image" href="assets/images/image-header.jpg" media="(max-width:769px)">
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap" rel="stylesheet">
 </head>
 <body>
             <header class="hero" style="background-color: greenyellow;">
@@ -65,7 +77,7 @@
                         <p>Using a collaborative formular of desingers, researchers, and photographers
                             videographers, and copywriters, we'll build and extend your brand in digitalplaces.
                         </p>
-                        <a href="#" class="learn yellow">Learn More</a>
+                        <a href="#" class="learn red">Learn More</a>
                     </article>
                     <div class="image-container">
                         <source media="(min-width:768px)" srcset="assets/images/mobile/image-stand-out.jpg">
@@ -146,6 +158,25 @@
                     <img src="assets/icons/icon-pinterest.svg" alt="Pinterest" width="20" height="20" loading="lazy" decoding="async">
                 </div>
             </footer>
+
+            <!-- Moblie menu tuggle script -->
+             <script>
+                // it grabs references to the dom elements: the trigger (button) and target (the menu)
+                const menuBtn = document.getElementById('moblie-menu-btn');
+                const moblieMenu  = document.getElementById('moblie-menu');
+                moblieMenu.addEventListener('click', ()=>{
+                    moblieMenu.classList.toggle('active')
+
+                })
+
+            // close menu when clicking outside
+            document.addEventListener('click',(e) =>{
+                if(!menuBtn.contain(e.target) && !moblieMenu.contains(e.target)){
+                    moblieMenu.classList.remove('active');
+                }
+            })
+
+             </script>
 
 
 

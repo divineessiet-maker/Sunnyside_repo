@@ -232,8 +232,8 @@ p{
 
 
 .arrow{
-  margin-top: 4rem;
-  animation: bounce 1.5s infinite;
+  margin-top: 6rem;
+  animation: bounce 2.0s infinite;
 }
 
 @keyframes bounce {
